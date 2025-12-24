@@ -47,7 +47,7 @@ The app will be available at `http://localhost:5173`
 
 | Home Page | Projects Section | Contact Form |
 | :---: | :---: | :---: |
-| ![Home](public/GitHome.png) | ![Projects](public/NoteBookGit.jpg) | ![Contact](public/ContactPage.jpg) |
+| ![Home](public/GitHome.png) | ![Projects](public/NoteBookGit.jpg) | ![Contact](public/contact.png) |
 
 > [!NOTE]
 > Add more screenshots to the `public/` folder to update this gallery.
