@@ -2,7 +2,7 @@
 
 A modern, high-performance, and visually stunning developer portfolio built with **React 19**, **Vite**, and **Tailwind CSS v4**. This project features smooth animations using **Framer Motion** and interactive 3D elements powered by **Three.js**.
 
-![Portfolio Preview](public/hero-image-v2.png)
+![Portfolio Preview](public/GitHome.png)
 
 ## 🚀 Setup
 
@@ -47,7 +47,7 @@ The app will be available at `http://localhost:5173`
 
 | Home Page | Projects Section | Contact Form |
 | :---: | :---: | :---: |
-| ![Home](public/hero-image.png) | ![Projects](public/NoteBook.jpg) | ![Contact](public/Logo.jpg) |
+| ![Home](public/GitHome.png) | ![Projects](public/NoteBookGit.jpg) | ![Contact](public/ContactPage.jpg) |
 
 > [!NOTE]
 > Add more screenshots to the `public/` folder to update this gallery.
