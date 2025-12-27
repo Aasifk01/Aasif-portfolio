@@ -8,14 +8,11 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Aasif Khan. All rights reserved.
         </p>
         <div className="flex gap-6">
-          <a href="#" className="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors">
+          <a href="https://www.linkedin.com/in/asif-khan-73990124b" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="#" className="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors">
+          <a href="https://github.com/Aasifk01" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors">
             <Github size={24} />
-          </a>
-          <a href="#" className="text-slate-500 dark:text-slate-400 hover:text-cyan-500 transition-colors">
-            <Twitter size={24} />
           </a>
         </div>
       </div>

@@ -26,18 +26,18 @@ const Navbar = () => {
 
   // List of navigation links
   const navLinks = [
-    { name: 'Home', href: '/Home' },
-    { name: 'About', href: '/About' },
-    { name: 'Skills', href: '/Skills' },
-    { name: 'Projects', href: '/Projects' },
-    { name: 'Contact', href: '/Contact' },
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
   ]
 
   return (
 
     
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-black/10 dark:border-white/10' : 'py-6 bg-transparent'}`}>
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <div className="container flex items-center justify-between px-6 mx-auto">
         
         {/* Logo Section */}
         <motion.a 
@@ -50,19 +50,19 @@ const Navbar = () => {
         </motion.a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="items-center hidden gap-8 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors font-medium"
+              className="font-medium transition-colors text-slate-600 dark:text-slate-300 hover:text-cyan-500"
             >
               {link.name}
             </a>
           ))}
           <button 
             onClick={toggleTheme} 
-            className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300"
+            className="p-2 transition-colors rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} />}
@@ -70,10 +70,10 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center gap-4">
+        <div className="flex items-center gap-4 md:hidden">
           <button 
             onClick={toggleTheme} 
-            className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300"
+            className="p-2 transition-colors rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} />}
@@ -88,14 +88,14 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-black/10 dark:border-white/10">
-          <div className="flex flex-col p-6 gap-4">
+        <div className="border-b md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-black/10 dark:border-white/10">
+          <div className="flex flex-col gap-4 p-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)} // Close menu when a link is clicked
-                className="text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors text-lg font-medium"
+                className="text-lg font-medium transition-colors text-slate-600 dark:text-slate-300 hover:text-cyan-500"
               >
                 {link.name}
               </a>
